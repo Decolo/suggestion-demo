@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+      ul,li{
+      list-style: none;
+      }
+      *{
+      padding: 0;
+      margin: 0;
+      }
+      input{
+      margin-top: 30px;
+      }
+  </style>
+</head>
+<body>
+  <div class="input-suggestion">
+    <input type="text" class="input-box">
+    <ul class="suggestion">
+    </ul>
+  </div>
+<script src="/index.js"></script>
+<script>
+  InputSuggestion.init('input-suggestion', {
+    method: "GET",
+    url: "http://127.0.0.1:9998/data.json"
+  })
+
+</script>
+</body>
+</html>
